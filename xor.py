@@ -31,7 +31,7 @@ def single_char_xor(input_bytes, char_value):
 
 
 def main():
-    file = open("/Users/poojatyagi/Documents/Documents_backup_9July/codepath cybersecurity/Classwork/5_10ab6c2a0ce05c7c7bdfcf9e5b229adf.05.txt")
+    file = open("./5_10ab6c2a0ce05c7c7bdfcf9e5b229adf.05.txt")
     all_best_scores = []
     for line in file:
         ciphertext = bytes.fromhex(line)
