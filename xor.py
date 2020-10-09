@@ -34,7 +34,7 @@ def main():
     file = open("./5_10ab6c2a0ce05c7c7bdfcf9e5b229adf.05.txt")
     all_best_scores = []
     for line in file:
-        ciphertext = bytes.fromhex(line)
+        ciphertext = bytes.fromhex(line.strip())
         potential_messages = []
         for key_value in range(256):
             message = single_char_xor(ciphertext, key_value)
